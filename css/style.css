@@ -26,7 +26,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 /* VARIÁVEIS */
 :root{
   --corNomeBotao: #a1a1a1c9;
-
+  --corHover: #dfdfdf;
 }
 
 /*BODY*/
@@ -107,6 +107,11 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		border: 1px solid var(--corNomeBotao);
 		background-color: #3f3f3f00;
 		color: var(--corNomeBotao);
+	}
+
+	button:hover{
+		color: var(--corHover);
+		border: 1px solid var(--corHover);
 	}
 
 	figure{
