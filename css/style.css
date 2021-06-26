@@ -67,7 +67,14 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 	.pg-home section ul li figure img{
 		width: 130px;
+		border: 2px solid transparent;
 		border-radius: 5px;
+	}
+	.pg-home section ul li:hover img{
+		border: 2px solid var(--corHover);
+	}
+	.pg-home section ul li:hover h3{
+		color: var(--corHover);
 	}
 
 	.pg-home section ul{
