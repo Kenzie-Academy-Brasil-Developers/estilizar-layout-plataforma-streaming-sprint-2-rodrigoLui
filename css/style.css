@@ -3,7 +3,6 @@ Theme Name: Netflix
 Author: Kenzie Academy
 Author URI: kenzie.com.br;
 Version: 1.0
- 
 --------------------------------------------
 SUGESTÃO DE ESTRUTURAÇÃO BASE 
 --------------------------------------------
@@ -13,7 +12,6 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** RODAPÉ
 **** PÁGINA INICIAL
 */
-
 *{
 	margin: 0;
 	padding: 0;
@@ -25,18 +23,19 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
+  --corFundo: #111111;
   --corNomeBotao: #a1a1a1c9;
-  --corHover: #dfdfdf;
+  --corHover: #ffffff;
 }
 
 /*BODY*/
 	body{
-
+		background-color: var(--corFundo);
 	}
 
 /*TOPO*/
 	header.topo{
-		background-image: linear-gradient( #000000 , #111111);
+		background-image: linear-gradient( #000000 , var(--corFundo));
 		height: 78px;
 	}
 
@@ -54,13 +53,13 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		background-color: #111111;
+		background-color: var(--corFundo);
 		height: 88.3vh;
 	}
 
 	.pg-home section header h2{
 		text-align: center;
-		color: white;
+		color: var(--corHover);
 		font-weight: normal;
 		font-family: Arial;
 		font-size: 48px;
@@ -118,3 +117,105 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		width: min-content;
 		margin: 0;
 	}
+
+	.addPerfil img{
+		width: 40px;
+	}
+
+@media (max-width: 768px) {
+
+	.pg-home section ul li h3{
+		padding-top: 4px;
+		font-size: 12px;
+	}
+
+	.pg-home section ul{
+		padding: 9px;
+		margin: 0;
+	}
+	.pg-home section ul li{
+		padding: 8px;
+	}
+
+	.pg-home section ul li figure img{
+		width: 82px;
+	}
+
+	.pg-home section header h2{
+		font-size: 30px;
+	}
+
+	
+	.topo figure img{
+		width: 74px;
+		margin-top: 10px;
+		margin-left: 31px;
+	}
+
+	section{
+		padding-top: 84px;
+	}
+
+	footer{
+		padding-top: 46px;
+	}
+
+	button{
+		padding: 7px 22px;
+		letter-spacing: 2px;
+		font-size: 12px;
+	}
+
+	header.topo{
+		height: 40px;
+	}
+
+}
+
+@media (max-width: 425px) {
+
+	section{
+		padding-top: 45px;
+		margin: 0 auto;
+	}
+
+	.pg-home section ul{
+		width: 80vw;
+		margin: 0 auto;
+		flex-wrap: wrap;
+	}
+
+	.topo figure img{
+		width: 50px;
+		margin-top: 12px;
+		margin-left: 15px;
+	}
+
+	.pg-home section ul li{
+		padding: 4px;
+	}
+
+}
+
+@media (max-width: 375px) {
+
+	.pg-home section header h2{
+		width: 300px;
+		margin: 0 auto;
+		flex-wrap: wrap;
+	}
+
+	.topo figure img{
+		width: 47px;
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+
+	section{
+		padding-top: 25px;
+	}
+
+	footer{
+		padding-top: 40px;
+	}
+}
