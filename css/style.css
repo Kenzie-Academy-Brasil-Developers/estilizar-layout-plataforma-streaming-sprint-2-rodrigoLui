@@ -14,9 +14,19 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 */
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 /* VARIÁVEIS */
 :root{
-  
+  --corNomeBotao: #a1a1a1c9;
+
 }
 
 /*BODY*/
@@ -26,14 +36,80 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*TOPO*/
 	header.topo{
-		
+		background-image: linear-gradient( #000000 , #111111);
+		height: 78px;
 	}
 
+	.topo figure img{
+		width: 92px;
+		margin-top: 22px;
+		margin-left: 55px;
+	}
+
+	figcaption{
+		display: none;
+	}
 /*RODAPÉ*/
 	
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		
+		background-color: #111111;
+		height: 88.3vh;
 	}
 
+	.pg-home section header h2{
+		text-align: center;
+		color: white;
+		font-weight: normal;
+		font-family: Arial;
+		font-size: 48px;
+	}
+
+	.pg-home section ul li figure img{
+		width: 130px;
+		border-radius: 5px;
+	}
+
+	.pg-home section ul{
+		margin-top: 10px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.pg-home section ul li{
+		padding: 14px;
+	}
+
+	.pg-home section ul li h3{
+		padding-top: 8px;
+		text-align: center;
+		color: var(--corNomeBotao);
+		font-weight: 300;
+	}
+
+	section{
+		padding-top: 64px;
+	}
+
+	footer{
+		text-align: center;
+		padding-top: 65px;
+	}
+	button{
+		font-family: Arial;
+		font-size: 15px;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		padding: 9px 21px;
+		border-radius: 0;
+		border: 1px solid var(--corNomeBotao);
+		background-color: #3f3f3f00;
+		color: var(--corNomeBotao);
+	}
+
+	figure{
+		width: min-content;
+		margin: 0;
+	}
