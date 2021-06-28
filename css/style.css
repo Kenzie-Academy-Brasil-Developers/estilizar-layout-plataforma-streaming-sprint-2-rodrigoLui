@@ -142,15 +142,10 @@ button:hover{
 
 @media (min-width: 768px) {
 
-	.topo img{
-		width: 8vw;
-		padding-top: 4vh;
-		padding-left: 2vw;
-	}
+	.topo img{ width: 8vw; padding-top: 4vh; padding-left: 2vw; }
 }
 
 @media (min-width: 1024px) {
-	.pg-home{
-		width: 858px;
-	}
+
+	.pg-home{ width: 858px; }
 }
