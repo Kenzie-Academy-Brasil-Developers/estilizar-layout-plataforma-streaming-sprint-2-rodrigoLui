@@ -148,3 +148,9 @@ button:hover{
 		padding-left: 2vw;
 	}
 }
+
+@media (min-width: 1024px) {
+	.pg-home{
+		width: 858px;
+	}
+}
