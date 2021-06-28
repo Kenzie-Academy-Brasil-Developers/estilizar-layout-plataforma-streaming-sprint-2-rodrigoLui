@@ -49,7 +49,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 	figcaption{ display: none; }
-	
+
 /*RODAPÉ*/
 
 	footer{
@@ -77,7 +77,11 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	margin: 0 auto;
 }
 
-.pg-home header h2{ color: var(--corNomeBotao); }
+.pg-home header h2{ 
+	color: var(--corHover);
+	font-weight: 300;	
+	font-size: 44px;
+}
 
 .pg-home header{ margin-bottom: 30px; }
 
@@ -137,15 +141,21 @@ button:hover{
 		align-items: center;
 		justify-content: space-around;
 	}
+	
 }
 
 @media (min-width: 1024px) {
-	.pg-home ul {justify-content: space-between;}
+	.pg-home ul {
+		justify-content: space-between;
+		width: 100%;
+	}
 
 	.pg-home{width: 858px;}
 
-	.addPerfil{
-		width: 186px;
-		height: 186px;
+	.addPerfil{ width: 186px; }
+
+	.addPerfil figure{
+		margin-bottom: 55px;
+		margin-top: 32px;
 	}
 }
