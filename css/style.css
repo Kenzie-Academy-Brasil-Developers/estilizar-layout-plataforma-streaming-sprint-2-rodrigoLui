@@ -18,7 +18,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 /* VARIÁVEIS */
@@ -53,7 +53,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		background-color: var(--corFundo);
+		
 		height: 88.3vh;
 	}
 
@@ -65,8 +65,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		font-size: 48px;
 	}
 
-	.pg-home section ul li figure img{
-		width: 130px;
+	.pg-home section ul .user img{
+		width: 120px;
 		border: 2px solid transparent;
 		border-radius: 5px;
 	}
@@ -77,14 +77,27 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		color: var(--corHover);
 	}
 
+	.pg-home section{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
 	.pg-home section ul{
 		margin-top: 10px;
 		display: flex;
 		justify-content: center;
+		width: 858px;
 	}
 
 	.pg-home section ul li{
-		padding: 14px;
+		width: 186px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
 	}
 
 	.pg-home section ul li h3{
@@ -126,7 +139,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 	.addPerfil img{
-		width: 40px;
+		margin-top: 5vh;
+		width: 70px;
 	}
 
 @media (max-width: 768px) {
@@ -141,7 +155,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		margin: 0;
 	}
 	.pg-home section ul li{
-		padding: 8px;
+		width: auto;
+		margin: 0 10px;
 	}
 
 	.pg-home section ul li figure img{
@@ -186,6 +201,10 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		margin: 0 auto;
 	}
 
+	.pg-home section h2{
+		width: 300px;
+	}
+
 	.pg-home section ul{
 		width: 80vw;
 		margin: 0 auto;
@@ -199,7 +218,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 	.pg-home section ul li{
-		padding: 4px;
+		margin: 0;
+		width: 186px;
 	}
 
 }
@@ -224,5 +244,13 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 	footer{
 		padding-top: 40px;
+	}
+}
+
+@media (max-width:320px) {
+	div.pg-home{
+		position: absolute;
+		width: 100%;
+		top: -20px;
 	}
 }
