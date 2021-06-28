@@ -83,9 +83,16 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	font-size: 44px;
 }
 
+.pg-home ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
 .pg-home header{ margin-bottom: 30px; }
 
-.user{ margin-bottom: 20px; }
+.user{ margin: 10px; }
 
 .user figure, .user img{
 	width: 186px;
@@ -102,6 +109,12 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	width: 186px; 
+}
+
+.addPerfil figure{
+	margin-bottom: 55px;
+	margin-top: 45px;
 }
 
 .addPerfil figure, .addPerfil img{
@@ -130,32 +143,8 @@ button:hover{
 @media (min-width: 768px) {
 
 	.topo img{
-		width: 4.6rem;
+		width: 4.6em;
 		padding-top: 4vh;
 		padding-left: 2vw;
-	}
-
-	.pg-home ul{
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: space-around;
-	}
-	
-}
-
-@media (min-width: 1024px) {
-	.pg-home ul {
-		justify-content: space-between;
-		width: 100%;
-	}
-
-	.pg-home{width: 858px;}
-
-	.addPerfil{ width: 186px; }
-
-	.addPerfil figure{
-		margin-bottom: 55px;
-		margin-top: 32px;
 	}
 }
